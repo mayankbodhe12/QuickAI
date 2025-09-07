@@ -1,6 +1,6 @@
 import { FileText, Sparkles } from "lucide-react";
 import React, { useState } from "react";
-import "./Reviewresume.css";
+import "./ReviewResume.css";
 import axios from "axios";
 import toast from "react-hot-toast";
 import { useAuth } from "@clerk/clerk-react";
