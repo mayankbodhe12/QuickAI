@@ -1,0 +1,174 @@
+
+*{
+div, span, p {
+  caret-color: transparent;
+}
+}
+
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  color: #374151; 
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+@media (min-width: 1024px) {
+  .blog-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+
+.blog-form,
+.blog-output {
+  flex: 1;
+  max-width: 32rem; 
+  padding: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.blog-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.blog-header h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+
+.label {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+.input-box {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  outline: none;
+}
+
+
+.category-container {
+  display:flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+
+.category-chip {
+  font-size: 0.75rem;
+  padding: 0.4rem 1rem;   
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  cursor: pointer;
+  color: #6b7280; 
+  transition: all 0.2s ease;
+  flex: 1 1 auto;        
+  text-align: center;
+  min-width: 120px;      
+  max-width: 45%;       
+}
+
+.category-chip.active {
+  background: #f3e8ff;
+  color: #7e22ce;
+  border-color: #d8b4fe;
+}
+
+
+.generate-btn {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background: linear-gradient(to right, #c341f6, #8e37eb);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.load {
+  width: 16px;              
+  height: 16px;             
+  margin: 4px 0;            
+  border-radius: 50%;       
+  border: 2px solid #ccc;   
+  border-top-color: transparent; 
+  animation: spin 1s linear infinite; 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.blog-output {
+  min-height: 24rem; 
+}
+
+.output-placeholder {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+}
+
+.output-placeholder p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon.purple {
+  color: #8e37eb;
+}
+
+.big-icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  margin: 0 auto 0.5rem auto;
+}
+
+.content-box {
+  margin-top: 12px;       
+  height: 100%;           
+  overflow-y: auto;     
+  font-size: 14px;        
+  color: #475569;      
+}
+
